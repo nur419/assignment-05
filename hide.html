@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+ <main class="mx-40 p-4">
+    <div class="navbar bg-white rounded-lg justify-between  p-4">
+        <div class="flex gap-3">
+            <img class="w-10" src="assets/logo.png" alt="img">
+          <a class=" text-green-500 text-xl">Dev <span class="text-black text-2xl font-bold">Board</span></a>
+        </div>
+        <div>
+            <button id="back-home" class="btn btn-primary">Back to home</button>
+        </div>
+    </div>
+    <section class="mt-10">
+        <p class="text-center text-black text-2xl p-5 font-bold">Bloges</p>
+        <div class="bg-white p-4 rounded-lg mb-6">
+            <h3 class="text-black text-2xl">Question -1: What are the defferent ways to select an element in the DOM?</h3>
+            <hr class="border-1 border-dashed border-gray-500 m-3">
+            <p class="text-gray-500"> The DOM makes a website dynamic. it has some propertise ,such as .getElementById Selects the element with a specified id attribute.
+                getElementsByClassName Selects all elements with a specified class name.
+                getElementsByTagName Selects all elements with a specified tag name.
+                querySelector Selects the first element that matches a specified CSS selector.
+                querySelectorAllSelects all elements that match a specified CSS selector.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg mb-6">
+            <h3 class="text-black text-2xl">Question -2: What is the defferent between innerHTML, innerText,and textContent?</h3>
+            <hr class="border-1 border-dashed border-indigo-600 m-3">
+            <p class="text-gray-500"> innerHTML, innerText, and textContent are all used to access or modify the text
+                     content of an HTML element, but they do so in different ways.
+                     innerHTML interprets the content as HTML, allowing you to retrieve or set 
+                     HTML elements within the element. innerText returns the rendered text content,
+                     respecting CSS styling and omitting hidden text. textContent retrieves the
+                     full text content as it exists in the source code, including hidden text and 
+                     without interpreting HTML. When setting content, both innerText and textContent replace
+                     the existing content with plain text, while innerHTML interprets the new content
+                     as HTML.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg mb-6">
+            <h3 class="text-black text-2xl">Question -3: What is event delagation in the DOM?</h3>
+            <hr class="border-1 border-dashed border-indigo-600 m-3">
+            <p class="text-gray-500"> event delegation is a powerful and efficient technique for handling events in the DOM. It improves performance, simplifies code, and makes it easier to work with dynamic content.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg mb-6">
+            <h3 class="text-black text-2xl">Question -4: What is event bubbling in the DOM?</h3>
+            <hr class="border-1 border-dashed border-indigo-600 m-3">
+            <p class="text-gray-500"> Event bubbling in the DOM is a process where an event originating from 
+                  a specific element propagates up the DOM tree to its parent elements. When an event occurs on  
+                  that element's event handlers are executed. Then, the event "bubbles" up to the element's
+                  an element,immediate parent, triggering the same event on that parent. This continues up the tree, 
+                  triggering the event on each ancestor element until it reaches the root of the document.
+                  Event bubbling allows for event delegation, where a single handler on a parent element can
+                  manage events for multiple child elements.
+            </p>
+        </div>
+    </section>
+ </main>
+    <script>
+   document.getElementById('back-home').addEventListener('click', function(){
+     window.location.href = "./index.html";
+   });
+    </script>
+</body>
+</html>
